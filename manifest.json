@@ -1,0 +1,13 @@
+{
+  "name": "FedEx Paste Address",
+  "version": "0.1",
+  "description": "Adds an address text area to Fedex.com",
+  "manifest_version": 2,
+  
+    "web_accessible_resources": ["jquery-2.1.0.min.map"], 
+  "content_scripts": [ {
+    "js": [ "jquery-2.1.0.min.js", "background.js" ],
+    "css": ["customStyles.css"],
+    "matches": [ "http://*.fedex.com/shipping*", "https://*.fedex.com/shipping*"]
+  }]
+}
